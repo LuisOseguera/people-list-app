@@ -1,5 +1,5 @@
 {
-  "name": "listado-personas",
+  "name": "people-list-app",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
