@@ -1,0 +1,12 @@
+<div class="item">
+  <ul>
+    <li>
+      <a [routerLink]="['/people', indexChild]"
+        [queryParams]="{editionMode:'1'}"
+        (click)="passPersonData()"
+      >
+        {{ person.firstname }} {{ person.lastname }}
+      </a>
+    </li>
+  </ul>
+</div>
