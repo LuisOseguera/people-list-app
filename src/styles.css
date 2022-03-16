@@ -113,3 +113,17 @@ a {
 li {
   color: #cf0f79;
 }
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: .25rem;
+  margin-bottom: .25rem;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
