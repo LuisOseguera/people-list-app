@@ -1,53 +1,58 @@
 html {
-  background-color: #2196f3;
-  min-height: 1000px;
-  font-family: "helvetica neue";
-  background: url(./assets/bg-pattern.png), #2196f3;
-  background: url(./assets/bg-pattern.png),
-    -webkit-gradient(linear, right top, left top, from(#2196f3), to(#009688));
-  background: url(./assets/bg-pattern.png),
-    linear-gradient(to left, #2196f3, #009688);
+  background: url(./assets/bg-pattern.png), linear-gradient(to left, #3a223f, #0d6b6e);
+  font-size: 1.5rem;
 }
 
 h1 {
+  font-family: 'Smooch', cursive;
   color: #fff;
   padding: 10px;
+  font-weight: 200;
 }
 
 .box {
-  max-width: 400px;
-  margin: 50px auto;
-  background: white;
-  border-radius: 5px;
-  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, .65);
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+  border-radius: 5px;  
+  backdrop-filter: blur(2.5px);
+  align-items: center;
 }
 
 #heading {
-  background-color: #3f51b5;
+  background-color: rgba(49, 166, 170, .25);
   text-align: center;
 }
 
 .item {
-  min-height: 70px;
+  height: 2rem;
   display: flex;
   align-items: center;
   border-bottom: 1px solid #f1f1f1;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: .75rem;
 }
 
 .item:last-child {
   border-bottom: 0;
 }
 
-input[type="checkbox"] {
-  margin: 20px;
+input {
+  width: 90%;
+  margin: 5px;
+  padding: 12.5px 20px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
 }
 
 p {
+  font-family: 'Mina', sans-serif;
   margin: 0;
   padding: 20px;
-  font-size: 20px;
-  font-weight: 200;
   color: #00204a;
+  font-size: .75rem;
 }
 
 .centered {
@@ -55,51 +60,56 @@ p {
 }
 
 form {
-  text-align: center;
-  margin-left: 20px;
+  padding: .5rem 0%;
+  justify-content: center;
 }
 
 button {
-  min-height: 50px;
-  width: 50px;
+  height: 35px;
+  width: 35px;
   border-radius: 50%;
   border-color: transparent;
-  background-color: #3f51b5;
+  background-color: #5d1a94;
   color: #fff;
   font-size: 30px;
   padding-bottom: 6px;
   border-width: 0;
+  text-align: center;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .5);
 }
 
 .redButton {
-  min-height: 50px;
-  width: 50px;
+  height: 35px;
+  width: 35px;
   border-radius: 50%;
   border-color: transparent;
-  background-color: red;
+  background-color: #cf0f79;
   color: #fff;
   font-size: 30px;
   padding-bottom: 6px;
+  margin-left: .5rem;
   border-width: 0;
-}
-
-input[type="text"] {
   text-align: center;
-  height: 60px;
-  top: 10px;
-  border: none;
-  background: transparent;
-  font-size: 20px;
-  font-weight: 200;
-  width: 40%;
-}
-
-input[type="text"]:focus {
-  outline: none;
-  box-shadow: inset 0 -3px 0 0 #3f51b5;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .5);
 }
 
 ::placeholder {
   color: grey;
   opacity: 1;
+}
+
+a {
+  font-family: 'Mina', sans-serif;
+  text-decoration: none;
+  color: #421332;
+}
+
+.container {
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+  border-radius: 5px;  
+  backdrop-filter: blur(2.5px);
+}
+
+li {
+  color: #cf0f79;
 }

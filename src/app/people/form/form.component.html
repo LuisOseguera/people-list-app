@@ -2,10 +2,10 @@
   <form class="item" #myForm="ngForm" (ngSubmit)="myForm.form.valid && addPerson()">
 
     <input type="text" name="firstname" id="firstname" placeholder="Nombre"
-    [(ngModel)] = "firstnameInput" required>
+    [(ngModel)] = "firstnameInput" style="width: 35%" required>
   
     <input type="text" name="lastname" id="lastname" placeholder="Apellido"
-    [(ngModel)] = "lastnameInput" required>
+    [(ngModel)] = "lastnameInput" style="width: 35%" required>
     
     <button type="submit" style="cursor: pointer">+</button>
     

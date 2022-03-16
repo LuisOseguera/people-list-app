@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import { NgxTippyModule } from 'ngx-tippy-wrapper';
 
 // Components:
 import { AppComponent } from './app.component';
@@ -11,7 +12,7 @@ import { PersonComponent } from './people/person/person.component';
 import { FormComponent } from './people/form/form.component';
 import { PeopleComponent } from './people/people.component';
 import { ErrorComponent } from './error/error.component';
-import { LoginComponent } from './login/login.component'
+import { LoginComponent } from './login/login.component';
 
 // Services:
 import { LogginService } from './LoggingService.service';
@@ -33,7 +34,8 @@ import { LoginGuard } from './login/login-guard.service';
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxTippyModule
   ],
   providers: [
     LogginService,

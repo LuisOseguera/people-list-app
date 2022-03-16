@@ -1,12 +1,12 @@
-<div *ngIf="!isAuthenticated()" class="box centered">
+<div *ngIf="!isAuthenticated()" class="box centered" style="padding: .35rem 0">
   <a routerLink="/login">Login</a>
 </div>
 
-<div *ngIf="isAuthenticated()" class="box centered">
+<div *ngIf="isAuthenticated()" class="box centered" style="padding: .35rem 0">
   <a style="cursor: pointer" (click)="exit()">Salir</a>
 </div>
 
-<div class="box" id="heading">
+<div class="box container" id="heading">
   <h1>{{title}}</h1>
 </div>
 

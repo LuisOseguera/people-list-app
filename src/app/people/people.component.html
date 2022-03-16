@@ -2,7 +2,12 @@
   <button style="cursor: pointer" (click)="add()">+</button>
 </div>
 
-<div class="box">
+<div class="box" style="padding-bottom: .75rem">
+  <p style="margin-bottom: -.75rem">
+    Puedes ingresar una persona presionando el botón de más (+) que aparece arriba.
+    También puedes modificarla o eliminarla presionando el nombre.
+  </p>
+  <hr>
   <app-person
     *ngFor="let personElement of people; let i = index"
     [person]="personElement"
