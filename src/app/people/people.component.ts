@@ -18,7 +18,16 @@ export class PeopleComponent implements OnInit {
   constructor(
     private _peopleService: PeopleService,
     private router: Router
-  ){}
+  ) {
+
+    _peopleService.passPeople.subscribe(
+
+      ( people: Person[] ) => {
+
+        this.people = people;
+      }
+    );
+  }
 
   ngOnInit(): void {
       

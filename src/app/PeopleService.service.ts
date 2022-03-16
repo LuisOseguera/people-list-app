@@ -15,12 +15,13 @@ export class PeopleService {
 
     greet = new EventEmitter<number>();
     passedPersonData = new EventEmitter<Person>();
+    passPeople = new EventEmitter<Person[]>();
 
     constructor(
         private _loggingService: LogginService,
         private _dataService: DataServices,
         private router: Router
-    ){}
+    ) { }
 
     setPeople( people: Person[] ){
 
@@ -35,15 +36,19 @@ export class PeopleService {
     addPerson( person: Person ){
 
         this._loggingService.sendMessageConsole( "Agregamos persona: " + person.firstname + " " + person.lastname );
-        this.people.push( person );
-
-        // ???
+        
         if( this.people == null ){
-
-            this.people = []
+            
+            // An array only can pushed if its asigned to empty value.
+            this.people = [];
         }
-
+        
+        // Push people in a local variable and database:
+        this.people.push( person );
         this._dataService.savePeople( this.people );
+
+        // Emitter to update the people component:
+        this.passPeople.emit( this.people );
     }
 
     findPerson( index: number ){
